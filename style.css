@@ -14,7 +14,7 @@ body{
 }
 
 .apresentacao{
-    padding: 1em 2em;
+    padding: 1em 3em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ body{
     box-shadow: var(--sombra); 
     width: 30%; 
     font-size: 1.2em;
+    text-align: center;
     text-align: center;
 }
 

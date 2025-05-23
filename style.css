@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --cor-fundo: #000000;
-    --cor_fundo-links: #DBCA9D;
-    --cor-letra: #c7be9e;
+    --cor-fundo: #CABBAA;
+    --cor_fundo-links: #B07A42;
+    --cor-letra: #242424;
     --fonte-principal: "Poppins", sans-serif;
-    --sombra: 0px 4px 4px rgba(255, 255, 255, 0.741);
+    --fonte-titulo:  "PT Serif", serif;
+    --sombra: 0px 4px 4px rgba(0, 0, 0, 0.741);
 }
 
 body{
@@ -37,12 +39,19 @@ body{
 
 .container_titulo{
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2.2em;
     color: var(--cor-letra);
+    font-family: var(--fonte-titulo);
+
 }
 
 .container_texto, .container_acesse{
     color: var(--cor-letra);
+}
+
+.container_texto{
+    width: 70%;
+    line-height: 1.5rem;
 }
 
 .apresentacao_links{
@@ -61,10 +70,10 @@ body{
 }
 
 .apresentacao_links_link{
-    color: var(--cor-fundo);
+    color: var(--cor-letra);
     padding: 1.1em;
     border-radius: 15px;
-    background-color: var(--cor-letra) ;  
+    background-color: var(--cor_fundo-links);  
     box-shadow: var(--sombra); 
     width: 30%; 
     font-size: 1.2em;
@@ -73,7 +82,7 @@ body{
 }
 
 .apresentacao_links_link:hover, .apresentacao_links_link:active{
-    background-color: var(--cor_fundo-links);
+    background-color: var(--cor-fundo);
 }
 
 .apresentacao_links_link img{
